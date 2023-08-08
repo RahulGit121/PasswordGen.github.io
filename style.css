@@ -1,0 +1,215 @@
+body {
+    background-image: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgb(52, 28, 79, 1), rgb(88, 7, 125, 1));
+    background-repeat: no-repeat;
+    height: 609px;
+    font-family: 'League Spartan', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.dabba {
+    margin-top: 100px;
+}
+
+.container {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.icon {
+    margin: 7px;
+    margin-left: 12px;
+    /* overflow: hidden; */
+}
+
+#box {
+    height: 45px;
+    width: 375px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    background-color: rgb(22, 21, 21);
+    border-bottom: 4px solid rgb(196, 10, 196);
+    border-right: none;
+    border-left: none;
+    border-top: none;
+
+
+}
+
+.pass-copy input {
+    font-size: 15px;
+    padding-left: 28px;
+    color: rgb(242, 242, 74);
+    font-weight: bold;
+    letter-spacing: 0.8px;
+
+
+}
+
+.pass-copy ::-webkit-input-placeholder {
+    font-size: 15px;
+    padding-left: 8px;
+    color: rgb(242, 242, 74);
+    font-weight: bold;
+    /* letter-spacing: 0.7px; */
+}
+
+/*---------------checkbox css------------- */
+.check {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    gap: 0 1rem;
+}
+
+.check input {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.check input:checked {
+    background-color: cyan;
+}
+
+.check input:checked::before {
+    content: '✓';
+    position: absolute;
+    margin-left: 2px;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+
+label {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+
+}
+
+
+.main-container {
+
+    background-color: rgb(22, 21, 21);
+    border-radius: 23px;
+    border-bottom: 4px solid rgb(196, 10, 196);
+    width: 350px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 30px;
+
+
+}
+
+.length-container {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.length-container p {
+    font-size: 20px;
+    color: yellow;
+    font-weight: bold;
+}
+
+h3 {
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    color: white;
+    font-size: bold;
+}
+
+.indicator {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    text-shadow: 2px 2px 5px red;
+}
+
+.gen-pass {
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 100%;
+    border-radius: 11px;
+    color: yellow;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    background-color: rgb(196, 10, 196);
+    border-bottom: 4px solid yellow;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-size: larger;
+    padding: auto;
+    cursor: pointer;
+
+}
+
+.Strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------------------slider css -------------------- */
+
+.sliding-container {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#slider {
+    appearance: none;
+    width: 100%;
+    height: 0.75rem;
+    cursor: pointer;
+    background-color: rgb(196, 10, 196);
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(196, 10, 196), rgb(196, 10, 196));
+    background-repeat: none;
+    border: none;
+    outline: none;
+    z-index: -1;
+
+}
+
+#slider:focus {
+    outline: 2px solid rgb(255, 243, 9);
+}
+
+#slider::-webkit-slider-thumb {
+    position: relative;
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px yellow;
+    cursor: pointer;
+    background-color: yellow;
+    transition: all ease-in 0.3s;
+}
+
+#slider::-webkit-slider-thumb:hover {
+
+    border: 2px solid yellow;
+    background-color: rgb(29, 27, 27);
+    transition: all ease 0.3s;
+}
